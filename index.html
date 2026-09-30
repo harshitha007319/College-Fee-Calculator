@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Fee Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎓 College Fee Calculator</h1>
+        <p class="subtitle">Calculate your college fee easily</p>
+
+        <div class="form-section">
+
+            <label>Student Name</label>
+            <input type="text" id="studentName" placeholder="Enter student name">
+
+            <label>Register Number</label>
+            <input type="text" id="registerNumber" placeholder="Enter register number">
+
+            <label>Tuition Fee</label>
+            <input type="number" id="tuitionFee" placeholder="Enter tuition fee">
+
+            <label>Hostel Fee</label>
+            <input type="number" id="hostelFee" placeholder="Enter hostel fee">
+
+            <label>Transport Fee</label>
+            <input type="number" id="transportFee" placeholder="Enter transport fee">
+
+            <label>Exam Fee</label>
+            <input type="number" id="examFee" placeholder="Enter exam fee">
+
+            <label>Other Fee</label>
+            <input type="number" id="otherFee" placeholder="Enter other fee">
+
+            <label>Amount Paid</label>
+            <input type="number" id="amountPaid" placeholder="Enter amount paid">
+
+            <button onclick="calculateFee()">Calculate Fee</button>
+            <button class="reset-btn" onclick="resetForm()">Reset</button>
+
+        </div>
+
+        <div class="result" id="result">
+
+            <h2>Fee Summary</h2>
+
+            <p>Student Name: <span id="displayName">-</span></p>
+
+            <p>Register Number: <span id="displayRegister">-</span></p>
+
+            <p>Total Fee: ₹<span id="totalFee">0</span></p>
+
+            <p>Amount Paid: ₹<span id="displayPaid">0</span></p>
+
+            <p>Remaining Fee: ₹<span id="remainingFee">0</span></p>
+
+            <p>Status: <span id="status">-</span></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
